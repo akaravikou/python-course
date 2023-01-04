@@ -1,35 +1,5 @@
-"""
-This is a pure Python implementation of the merge sort algorithm.
-For doctests run following command:
-python -m doctest -v merge_sort.py
-or
-python3 -m doctest -v merge_sort.py
-For manual testing run:
-python merge_sort.py
-"""
-
-
 def merge_sort(collection: list) -> list:
-    """
-    :param collection: some mutable ordered collection with heterogeneous
-    comparable items inside
-    :return: the same collection ordered by ascending
-    Examples:
-    >>> merge_sort([0, 5, 3, 2, 2])
-    [0, 2, 2, 3, 5]
-    >>> merge_sort([])
-    []
-    >>> merge_sort([-2, -5, -45])
-    [-45, -5, -2]
-    """
-
     def merge(left: list, right: list) -> list:
-        """
-        Merge left and right.
-        :param left: left collection
-        :param right: right collection
-        :return: merge result
-        """
 
         def _merge():
             while left and right:
